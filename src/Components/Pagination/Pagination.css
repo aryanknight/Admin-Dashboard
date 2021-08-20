@@ -1,0 +1,34 @@
+.pagination{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C5CEE0;
+}
+
+.number-cont{
+    display: flex;
+    align-items: stretch;
+}
+
+.number{
+    padding: 0.5rem;
+}
+
+.selected{
+    color: black;
+    border-bottom: 2px solid rgb(0, 0, 0) ;
+}
+
+.number:hover{
+    color: black;
+    border-bottom: 2px solid rgb(0, 0, 0) ;
+}
+
+#page-buttons-1 , #page-buttons-2{
+    color: #b3bbcc;
+}
+
+#page-buttons-1:hover , #page-buttons-2:hover{
+    color: rgb(141, 141, 141);
+}

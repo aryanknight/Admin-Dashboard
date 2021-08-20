@@ -3,14 +3,6 @@
     width: 100%;
 }
 
-.prohress-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    margin-bottom: 20px;
-}
-
 .tracker{
     display: flex;
     width: 100%;
@@ -52,8 +44,7 @@
 .tracker-info-1{
     display: flex; 
     align-items: center;
-    color: #444444;
-    opacity: 60%;
+    color: #6A707E;
 }
 
 .tracker-info{

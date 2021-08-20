@@ -1,0 +1,16 @@
+.sm-notification{
+    padding: 1rem;
+}
+
+.notification{
+    margin: 10px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.notification:hover{
+    transform: scale(1.09,1.09);
+}

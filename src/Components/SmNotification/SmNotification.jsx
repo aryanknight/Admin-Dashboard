@@ -1,14 +1,14 @@
 import React from 'react';
-import './ProgressTracker.css';
-import Paper from '@material-ui/core/Paper';
+import './SmNotification.css';
+import {Paper} from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Tracker from './Tracker.jsx';
 import Pagination from '../Pagination/Pagination';
+import Notification from './Notification';
 
-export default function ProgressTracker() {
+export default function SmNotification() {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -20,10 +20,10 @@ export default function ProgressTracker() {
         setAnchorEl(null);
     };
     return (
-        <div className='progress-tracker'>
+        <div className="sm-notification">
             <Paper elevation={3} >
                 <div className="header">
-                    <div className="title">Progress Tracker</div>
+                    <div className="title">Notifications</div>
                     <div className="progress-right">
 
                         <div>
@@ -45,14 +45,13 @@ export default function ProgressTracker() {
 
                     </div>
                 </div>
-                
-                <Tracker progress="39" />
-                <Tracker progress="93" />
-                <Tracker progress="51" />
-                <Tracker progress="73" />     
-                <Pagination />           
-                
-            </Paper>
+                <Notification imgcolor="green"/>
+                <Notification imgcolor="yellow"/>
+                <Notification imgcolor="yellow"/>
+                <Notification imgcolor="green"/>
+
+                <Pagination/>
+            </Paper>    
         </div>
     )
 }

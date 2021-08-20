@@ -16,10 +16,7 @@ const theme = createTheme({
         main: '#ffcf33',
       },
       secondary:{
-        main:"#4caf50"
-      },
-      tertiary:{
-        main:"#4caf50"
+        main:"#71D875"
       }
     },
   });
@@ -44,7 +41,7 @@ export default function Tracker({progress}) {
             </div>
             
             <div className="tracker-mid">
-                <LinearProgress color={barColor} style={{height:"20px",backgroundColor:'#4444441A'}} variant="determinate" value={progress} />
+                <LinearProgress color={barColor} style={{height:"15px",backgroundColor:'#4444441A'}} variant="determinate" value={progress} />
                 <div className="tracker-info">
                     <div className="tracker-info-1">
                         <SwapCallsIcon style={{marginRight:'8px'}}/> Process : Transition
