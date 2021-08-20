@@ -45,10 +45,10 @@ export default function SmNotification() {
 
                     </div>
                 </div>
-                <Notification imgcolor="green"/>
-                <Notification imgcolor="yellow"/>
-                <Notification imgcolor="yellow"/>
-                <Notification imgcolor="green"/>
+                <Notification imgcolor="green" title="New Acquisition Process"/>
+                <Notification imgcolor="yellow" title="Completed Form"/>
+                <Notification imgcolor="yellow" title="Corrected Form"/>
+                <Notification imgcolor="green" title="New Acquisition"/>
 
                 <Pagination/>
             </Paper>    
