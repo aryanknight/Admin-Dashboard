@@ -7,7 +7,7 @@ import './Calendar.css';
 export default function Calendars() {
     return (
         <div className="calendar">
-            <Paper>
+            <Paper elevation={3}>
                 <Calendar className="arc" />
             </Paper>
         </div>
