@@ -38,18 +38,22 @@
 
 .tracker-title{
     font-size: 18px;
+    color: #444444;
+    opacity: 100%;
 }
 
 .tracker-para{
     font-size: 12px;
     margin-top: 4px;
     color: #444444;
+    opacity: 60%;
 }
 
 .tracker-info-1{
     display: flex; 
     align-items: center;
     color: #444444;
+    opacity: 60%;
 }
 
 .tracker-info{
