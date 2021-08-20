@@ -4,7 +4,7 @@
 
 .notification{
     margin: 10px;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
