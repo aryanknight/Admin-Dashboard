@@ -1,0 +1,41 @@
+.teams{
+    padding: 1rem;
+}
+
+.teams-cont{
+    padding: 0rem 1rem;
+}
+
+.team-box{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #F3F6F9;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    margin-top: 10px;
+}
+
+.team-box-text{
+    margin-left: 16px;
+}
+
+.team-box-title{
+    font-weight: 500;
+}
+
+.team-box-para{
+    margin-top: 2px;
+    font-size: 14px;
+    color:#8F9BB3;
+}
+
+@media (min-width:1500px){
+    .teams{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+    }
+}

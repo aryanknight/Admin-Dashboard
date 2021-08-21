@@ -6,6 +6,7 @@ import Calendar from '../Components/Calendar/Calendar';
 import SmNotification from '../Components/SmNotification/SmNotification';
 import Tasks from '../Components/Tasks/Tasks'; 
 import Files from '../Components/Files/Files';
+import Teams from '../Components/Teams/Teams';
 
 
 export default function Dashboard() {
@@ -25,6 +26,7 @@ export default function Dashboard() {
                     <div className="sm-container">
                         <Calendar/>
                         <SmNotification/>
+                        <Teams/>
                     </div>
                 </div>
             </div>

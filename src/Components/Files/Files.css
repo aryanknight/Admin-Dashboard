@@ -21,6 +21,7 @@
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .folder-1:hover{
@@ -48,7 +49,7 @@
         padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: 0;
+        padding-bottom: 2rem;
     }
 
     .folder{

@@ -9,10 +9,11 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-}
+}    
 
 .notification:hover{
-    transform: scale(1.09,1.09);
+    transform: translateX(10px);
+    transition: 0.5s;
 }
 
 @media (min-width:1500px){

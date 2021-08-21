@@ -17,12 +17,12 @@
 
 .selected{
     color: black;
-    border-bottom: 2px solid rgb(0, 0, 0) ;
+    border-bottom: 2px solid rgb(2, 136, 245) ;
 }
 
 .number:hover{
     color: black;
-    border-bottom: 2px solid rgb(0, 0, 0) ;
+    border-bottom: 2px solid rgb(2, 136, 245) ;
 }
 
 #page-buttons-1 , #page-buttons-2{

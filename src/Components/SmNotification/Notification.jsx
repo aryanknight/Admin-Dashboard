@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export default function Notification({imgcolor,title}) {
     return (
-        <Paper elevation={3} className="notification">
+        <Paper elevation={3} className="notification" style={{transition:'0.5s'}}>
             <img src={imgcolor=="green" ? Note1 : Note2} />
             <div className="notification-text">
                 <div style={{color:'#5e6473',textAlign:'left',minWidth:'180px',maxWidth:'180px'}}>{title}</div>
