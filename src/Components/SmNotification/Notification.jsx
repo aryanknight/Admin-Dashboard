@@ -9,7 +9,7 @@ export default function Notification({imgcolor,title}) {
         <Paper elevation={3} className="notification">
             <img src={imgcolor=="green" ? Note1 : Note2} />
             <div className="notification-text">
-                <div style={{color:'#6A707E',textAlign:'left',minWidth:'180px',maxWidth:'180px'}}>{title}</div>
+                <div style={{color:'#5e6473',textAlign:'left',minWidth:'180px',maxWidth:'180px'}}>{title}</div>
                 <div className="tracker-para" style={{color:'black'}}>20 Jan 2021, 15:39</div>
             </div>
             <ArrowForwardIosIcon style={{color:'#6A707E'}} />

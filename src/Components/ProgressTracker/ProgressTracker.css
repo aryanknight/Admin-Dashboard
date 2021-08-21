@@ -52,3 +52,14 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media (min-width:1500px){
+
+    .tracker-left{
+        width: 15%;
+    }
+    
+    .tracker-mid{
+        width: 75%;
+    }
+}
