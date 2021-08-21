@@ -5,6 +5,7 @@ import ProgressTracker from '../Components/ProgressTracker/ProgressTracker';
 import Calendar from '../Components/Calendar/Calendar';
 import SmNotification from '../Components/SmNotification/SmNotification';
 import Tasks from '../Components/Tasks/Tasks'; 
+import Files from '../Components/Files/Files';
 
 
 export default function Dashboard() {
@@ -19,6 +20,7 @@ export default function Dashboard() {
                     <div className="md-container">
                         <ProgressTracker/>
                         <Tasks/>
+                        <Files/>
                     </div>
                     <div className="sm-container">
                         <Calendar/>

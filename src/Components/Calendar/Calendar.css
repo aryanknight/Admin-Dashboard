@@ -2,7 +2,16 @@
  padding: 1rem;
 }
 .arc {
-    background-color: #FFFFFF;
-    border-radius: 6px;
-    min-width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  min-width: 100%;
+}
+
+@media (min-width:1500px){
+  .calendar{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
   }
+}

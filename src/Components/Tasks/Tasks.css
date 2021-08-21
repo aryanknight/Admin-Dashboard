@@ -1,3 +1,12 @@
 .tasks{
     padding: 1rem;
 }
+
+@media (min-width:1500px) {
+    .tasks{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+    }
+}

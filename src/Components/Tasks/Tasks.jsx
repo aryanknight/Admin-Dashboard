@@ -14,6 +14,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
+import Pagination from '../Pagination/Pagination';
 
 const useStyles = makeStyles({
   head:{
@@ -65,7 +66,7 @@ export default function Tasks() {
     return (
         <div className="tasks">
             <Paper elevation={3}>
-                <div className="header" style={{borderBottom:'1px solid #a8a8a8'}}>
+                <div className="header" style={{borderBottom:'1px solid #a8a8a850'}}>
                     <div className="title" >Tasks</div>
                     <div className="progress-right">
 
@@ -123,6 +124,7 @@ export default function Tasks() {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                <Pagination/>
             </Paper>
         </div>
     )

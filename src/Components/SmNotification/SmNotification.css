@@ -14,3 +14,12 @@
 .notification:hover{
     transform: scale(1.09,1.09);
 }
+
+@media (min-width:1500px){
+    .sm-notification{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+    }
+}

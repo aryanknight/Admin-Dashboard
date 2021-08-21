@@ -1,0 +1,57 @@
+.files{
+    padding: 1rem;
+}
+
+.folder-cont{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.folder{
+    width: 33%;
+    padding: 0.5rem;
+}
+
+.folder-1{
+    padding: 1rem;
+    border:1px solid #a8a8a834;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folder-1:hover{
+    transform: scale(1.05,1.05);
+}
+
+.folder-text{
+    margin-left: 10px;
+}
+
+.folder-head{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.folder-para{
+    font-size: 14px;
+    color:#8F9BB3;
+}
+
+
+@media (min-width:1500px){
+
+    .files{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+    }
+
+    .folder{
+        width: 25%;
+    }
+}
