@@ -37,6 +37,7 @@
     padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .sidebar-icons{
