@@ -18,8 +18,7 @@ export default function Dashboard() {
                 <div className="lg-container">
                     <div className="md-container">
                         <ProgressTracker/>
-                        {/* <Tasks/>
-                        <ProgressTracker/> */}
+                        <Tasks/>
                     </div>
                     <div className="sm-container">
                         <Calendar/>
