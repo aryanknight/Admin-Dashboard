@@ -33,6 +33,12 @@
     border-left: 3px solid #7F63F4;
 }
 
+.sidebar-selected{
+    color: #7F63F4;
+    background-color: #F2EFFE;
+    border-left: 3px solid #7F63F4;
+}
+
 .sidebar-item{
     padding: 1rem 1.5rem;
     display: flex;

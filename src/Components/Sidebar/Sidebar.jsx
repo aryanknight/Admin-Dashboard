@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Logo from '../../Images/logo.png';
 import MenuIcon from '@material-ui/icons/Menu';
 import DashboardIcon from '@material-ui/icons/Dashboard';
@@ -14,9 +14,32 @@ import FolderIcon from '@material-ui/icons/Folder';
 import PersonIcon from '@material-ui/icons/Person';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
 export default function Sidebar() {
+
+    useEffect(()=>{
+        var menu=document.getElementsByClassName("sidebar-item");
+        console.log(menu.length);
+
+        function remMenu(){
+            var menu=document.getElementsByClassName("sidebar-item");
+            for(var i=0;i<menu.length;i++){
+                menu[i].classList.remove("sidebar-selected");
+            }
+        }
+
+        function setMenu(event){
+            remMenu();
+            event.target.classList.add("sidebar-selected");
+        }
+        // for(var i=0;i<menu.length;i++){
+        //     console.log('a');
+        //     menu[i].addEventListener("click", function(event){setMenu(event)});
+        // }
+    },[])
+
     return (
         <div className="sidebar">
             <div className="sidebar-head">
@@ -24,16 +47,16 @@ export default function Sidebar() {
                 <MenuIcon fontSize="large" style={{color:'white'}}/>
             </div>
             <div className="sidebar-list-1">
-                <div className="sidebar-item"> <DashboardIcon className="sidebar-icons"/> Dashboard</div>
-                <div className="sidebar-item"> <DonutLargeIcon className="sidebar-icons"/> Processes</div>
-                <div className="sidebar-item"> <HomeIcon className="sidebar-icons"/> Practices</div>
-                <div className="sidebar-item"> <TimelineIcon className="sidebar-icons"/> Progress Tracker</div>
-                <div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div>
-                <div className="sidebar-item"> <AssignmentIcon className="sidebar-icons"/> Tasks</div>
-                <div className="sidebar-item"> <CalendarTodayIcon className="sidebar-icons"/> Calendar</div>
-                <div className="sidebar-item"> <GroupIcon className="sidebar-icons"/> Teams</div>
-                <div className="sidebar-item"> <ImportContactsIcon className="sidebar-icons"/> Forms</div>
-                <div className="sidebar-item"> <FolderIcon className="sidebar-icons"/> Files Archive</div>
+                <NavLink to="/"><div className="sidebar-item"><DashboardIcon className="sidebar-icons"/> Dashboard </div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <DonutLargeIcon className="sidebar-icons"/> Processes</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <HomeIcon className="sidebar-icons"/> Practices</div></NavLink>
+                <NavLink to="/progress-tracker"><div className="sidebar-item"> <TimelineIcon className="sidebar-icons"/> Progress Tracker</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <AssignmentIcon className="sidebar-icons"/> Tasks</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <CalendarTodayIcon className="sidebar-icons"/> Calendar</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <GroupIcon className="sidebar-icons"/> Teams</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <ImportContactsIcon className="sidebar-icons"/> Forms</div></NavLink>
+                <NavLink to="/"><div className="sidebar-item"> <FolderIcon className="sidebar-icons"/> Files Archive</div></NavLink>
             </div>
             <div className="seprator"></div>
             <div className="sidebar-list-1">
