@@ -1,0 +1,51 @@
+.notifications{
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.notifications-box{
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 90px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.notifications-box:hover{
+    transform: translateX(10px);
+}
+
+.notification-button{
+    position:absolute;
+    padding:1rem;
+    min-width: 12rem;
+    font-size: 14px;
+    font-weight:500 ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #1F154B;
+    cursor: pointer;
+    right: 0.5rem;
+}
+
+.notification-arrow{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width:1500px){
+
+    .notifications{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+    }
+}

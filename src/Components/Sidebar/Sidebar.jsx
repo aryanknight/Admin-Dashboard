@@ -19,26 +19,26 @@ import './Sidebar.css';
 
 export default function Sidebar() {
 
-    useEffect(()=>{
-        var menu=document.getElementsByClassName("sidebar-item");
-        console.log(menu.length);
+    // useEffect(()=>{
+    //     var menu=document.getElementsByClassName("sidebar-item");
+    //     console.log(menu.length);
 
-        function remMenu(){
-            var menu=document.getElementsByClassName("sidebar-item");
-            for(var i=0;i<menu.length;i++){
-                menu[i].classList.remove("sidebar-selected");
-            }
-        }
+    //     function remMenu(){
+    //         var menu=document.getElementsByClassName("sidebar-item");
+    //         for(var i=0;i<menu.length;i++){
+    //             menu[i].classList.remove("sidebar-selected");
+    //         }
+    //     }
 
-        function setMenu(event){
-            remMenu();
-            event.target.classList.add("sidebar-selected");
-        }
-        // for(var i=0;i<menu.length;i++){
-        //     console.log('a');
-        //     menu[i].addEventListener("click", function(event){setMenu(event)});
-        // }
-    },[])
+    //     function setMenu(event){
+    //         remMenu();
+    //         event.target.classList.add("sidebar-selected");
+    //     }
+    //     for(var i=0;i<menu.length;i++){
+    //         console.log('a');
+    //         menu[i].addEventListener("click", function(event){setMenu(event)});
+    //     }
+    // },[])
 
     return (
         <div className="sidebar">
@@ -51,7 +51,7 @@ export default function Sidebar() {
                 <NavLink to="/"><div className="sidebar-item"> <DonutLargeIcon className="sidebar-icons"/> Processes</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <HomeIcon className="sidebar-icons"/> Practices</div></NavLink>
                 <NavLink to="/progress-tracker"><div className="sidebar-item"> <TimelineIcon className="sidebar-icons"/> Progress Tracker</div></NavLink>
-                <NavLink to="/"><div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div></NavLink>
+                <NavLink to="/notifications"><div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <AssignmentIcon className="sidebar-icons"/> Tasks</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <CalendarTodayIcon className="sidebar-icons"/> Calendar</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <GroupIcon className="sidebar-icons"/> Teams</div></NavLink>

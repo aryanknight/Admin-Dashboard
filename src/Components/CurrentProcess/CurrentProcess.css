@@ -7,16 +7,16 @@
     padding-bottom: 20px;
 }
 
-.blue-box{
-    background: linear-gradient(135deg, rgb(8, 72, 190) 0%, rgba(0,181,255,1) 100%);
+.green-box{
+    background-image: linear-gradient(to right, #67c892, #5aae7f, #4d946c, #407c5a, #346449);
 }
 
-.green-box{
-    background: linear-gradient(52deg, rgba(6,209,12,1) 0%, rgba(0,255,154,1) 100%);
+.red-box{
+    background-image: linear-gradient(to right, #e96a6a, #d45b5a, #bf4b4a, #aa3c3b, #962d2d);
 }
 
 .orange-box{
-    background: linear-gradient(52deg, rgba(249,70,11,1) 0%, rgba(255,154,0,1) 100%);
+    background-image: linear-gradient(to right, #f48665, #f98c5d, #fc9253, #fd9a4a, #fda23f);
 }
 
 .current-box{

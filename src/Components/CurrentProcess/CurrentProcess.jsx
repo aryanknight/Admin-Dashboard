@@ -11,9 +11,9 @@ export default function CurrentProcess() {
                     <div className="title" >Current Processes</div>                    
                 </div>
                 <div className="current-process-cont" >
-                    <CurrentBox color="blue-box" no="19" title="Transitions" />
+                    <CurrentBox color="green-box" no="19" title="Transitions" />
                     <CurrentBox color="orange-box" no="11" title="Mergers" />
-                    <CurrentBox color="green-box" no="04" title="Closures" />
+                    <CurrentBox color="red-box" no="04" title="Closures" />
                 </div>
             </Paper>
         </div>
