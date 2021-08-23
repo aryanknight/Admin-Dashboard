@@ -52,7 +52,7 @@ export default function Sidebar() {
                 <NavLink to="/"><div className="sidebar-item"> <HomeIcon className="sidebar-icons"/> Practices</div></NavLink>
                 <NavLink to="/progress-tracker"><div className="sidebar-item"> <TimelineIcon className="sidebar-icons"/> Progress Tracker</div></NavLink>
                 <NavLink to="/notifications"><div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div></NavLink>
-                <NavLink to="/"><div className="sidebar-item"> <AssignmentIcon className="sidebar-icons"/> Tasks</div></NavLink>
+                <NavLink to="/tasks"><div className="sidebar-item"> <AssignmentIcon className="sidebar-icons"/> Tasks</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <CalendarTodayIcon className="sidebar-icons"/> Calendar</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <GroupIcon className="sidebar-icons"/> Teams</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <ImportContactsIcon className="sidebar-icons"/> Forms</div></NavLink>

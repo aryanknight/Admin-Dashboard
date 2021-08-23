@@ -1,0 +1,33 @@
+.task-manager{
+    padding: 1rem;
+}
+
+.task-btn-cont{
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-btn-cont-1{
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.task-btn{
+    width: 100%;
+    color: black;
+    border: 1px solid #a8a8a850;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    border-radius: 5px;
+}
+
+@media (min-width:1500px){
+    .task-manager{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+    }
+}

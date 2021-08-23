@@ -44,8 +44,24 @@ const rows = [
   createData('Gingerbread', 356, 16.0, 'Marketing', 3.9),
 ];
 
+const rows1 = [
+    createData('Frozen yoghurt', 159, 6.0, 'Digital', 4.0),
+    createData('Ice cream sandwich', 237, 9.0, 'Digital', 4.3),
+    createData('Eclair', 262, 16.0, 'Accounts', 6.0),
+    createData('Cupcake', 305, 3.7, 'Digital', 4.3),
+    createData('Gingerbread', 356, 16.0, 'Marketing', 3.9),
+    createData('Ice cream sandwich', 237, 9.0, 'Digital', 4.3),
+    createData('Eclair', 262, 16.0, 'Accounts', 6.0),
+    createData('Cupcake', 305, 3.7, 'Digital', 4.3),
+    createData('Gingerbread', 356, 16.0, 'Marketing', 3.9),
+    createData('Ice cream sandwich', 237, 9.0, 'Digital', 4.3),
+    createData('Eclair', 262, 16.0, 'Accounts', 6.0),
+    createData('Cupcake', 305, 3.7, 'Digital', 4.3),
+    createData('Gingerbread', 356, 16.0, 'Marketing', 3.9),
+  ];
 
-export default function Tasks() {
+
+export default function Tasks({rowNo}) {
     const classes = useStyles();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -58,6 +74,8 @@ export default function Tasks() {
         setAnchorEl(null);
     };
 
+    const selectedRow= rowNo==1 ? rows:rows1; 
+    
     function a(){
         const b=document.getElementsByClassName("ab")[0];
         b.checked=false;
@@ -102,7 +120,7 @@ export default function Tasks() {
                         </TableRow>
                         </TableHead>
                         <TableBody>
-                        {rows.map((row) => (
+                        {selectedRow.map((row) => (
                             <TableRow key={row.name} >
 
                             <TableCell component="th"className={classes.content}  >
