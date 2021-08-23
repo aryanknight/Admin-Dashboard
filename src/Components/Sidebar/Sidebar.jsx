@@ -48,7 +48,7 @@ export default function Sidebar() {
             </div>
             <div className="sidebar-list-1">
                 <NavLink to="/"><div className="sidebar-item"><DashboardIcon className="sidebar-icons"/> Dashboard </div></NavLink>
-                <NavLink to="/"><div className="sidebar-item"> <DonutLargeIcon className="sidebar-icons"/> Processes</div></NavLink>
+                <NavLink to="/processes"><div className="sidebar-item"> <DonutLargeIcon className="sidebar-icons"/> Processes</div></NavLink>
                 <NavLink to="/"><div className="sidebar-item"> <HomeIcon className="sidebar-icons"/> Practices</div></NavLink>
                 <NavLink to="/progress-tracker"><div className="sidebar-item"> <TimelineIcon className="sidebar-icons"/> Progress Tracker</div></NavLink>
                 <NavLink to="/notifications"><div className="sidebar-item"> <NotificationsIcon className="sidebar-icons"/> Notifications</div></NavLink>

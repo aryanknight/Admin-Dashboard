@@ -4,6 +4,7 @@ import Dashboard from './Pages/Dashboard';
 import Progress from './Pages/Progress';
 import Notifications from './Pages/Notifications'; 
 import TasksPage from './Pages/TasksPage';
+import ProcessesPage from './Pages/ProcessesPage';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </Route>
       <Route exact path="/tasks">
         <TasksPage/>
+      </Route>
+      <Route exact path="/processes">
+        <ProcessesPage/>
       </Route>
 
     </BrowserRouter>
